@@ -1,0 +1,43 @@
+--- VS Code ---
+
+.vscode/
+gcs-keyfile.json
+tempCodeRunnerFile.*
+
+--- Node.js Dependencies ---
+
+Ignore the node_modules folder, which contains all installed packages
+
+node_modules/
+
+--- Project-Specific ---
+
+Ignore the environment file, which contains all secrets and API keys
+
+.env
+
+Ignore the folder for all uploaded user files
+
+These are binary files and should not be in source control
+
+uploads/*
+!uploads/avatars/.gitkeep
+
+--- Logs ---
+
+Ignore log files
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+--- Common OS Files ---
+
+Ignore macOS system files
+
+.DS_Store
+
+Ignore Windows system files
+
+Thumbs.db

@@ -1,0 +1,39 @@
+{
+  "name": "intranet-mvp",
+  "version": "1.0.0",
+  "description": "ACHAP Intranet Document Management API",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start ecosystem.config.js --env production",
+    "dev": "nodemon index.js",
+    "seed": "node test/userSeeding.js",
+    "clear:db": "node test/clearDatabase.js",
+    "worker:scan": "node workers/virusScan.worker.js",
+    "stop": "pm2 stop all",
+    "delete": "pm2 delete all"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "@google-cloud/storage": "^7.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "bullmq": "^5.11.0",
+    "ioredis": "^5.4.1",
+    "mongoose": "^8.3.2",
+    "multer": "^1.4.5-lts.1",
+    "pm2": "^5.4.0",
+    "virustotal-api": "^1.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "author": "Denny Wamb@sowerved",
+  "license": "ISC"
+}
