@@ -1,6 +1,6 @@
 # Intranet Document Management API
 
-This repository contains the backend API for the ACHAP Intranet Document Management platform. It is a secure, robust, and scalable system built with Node.js, Express, and MongoDB, designed to handle user authentication, role-based access control, document versioning, team management, and asynchronous security scanning.
+This repository contains the backend API for the  Intranet Document Management platform. It is a secure, robust, and scalable system built with Node.js, Express, and MongoDB, designed to handle user authentication, role-based access control, document versioning, team management, and asynchronous security scanning.
 
 ---
 
@@ -47,7 +47,7 @@ Before you begin, ensure you have the following installed on your local machine:
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repository-url>
+    git clone https://github.com/Dennis-DW/Intranet-Document-Management-API.git
     cd intranet-mvp
     ```
 
